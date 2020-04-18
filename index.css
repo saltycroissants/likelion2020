@@ -1,0 +1,314 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+body{
+    margin:0;
+    font-family: 'Noto Sans KR', sans-serif;    
+}
+section{
+    padding-top: 2em;
+}
+p{
+    font-size : 0.9em;
+    line-height: 1.6em;
+    font-family: 'Black Han Sans', sans-serif;
+}
+
+blockquote{
+    font-size : 0.7em;
+    line-height: 1.6em;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+}
+
+.container{
+    width: 80%;
+    margin: 50px auto;
+    text-align: center
+}
+
+.logo{
+    width: 130px;
+}
+
+.hide-mobile{
+    display: none;
+    
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+  
+}
+
+.menu{
+    width:25px;
+    margin-top :45%
+}
+
+.lion{
+    widows: 50%;
+    width: 60%
+}
+
+.cell{
+    display : grid;
+    grid-gap : 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8,1fr);
+    /*grid-auto-rows: minmax(100px, auto);  */
+}
+
+
+li{
+    list-style-type: none;
+    /*height: 150px;*/
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
+}
+
+
+.cell-1{
+    grid-column: 1;
+    grid-row: 1 / 2;   
+    color:black;
+   /* background-color:#FFDA8B;
+    box-shadow: 5px 5px rgba(0,0,0,0.2); 
+    border-radius: 10px;*/
+}
+
+.cell-2{
+    background-color: whitesmoke;
+    color: black;
+    grid-column: 1;
+    grid-row: 2/3;
+    box-shadow: 5px 5px rgba(0,0,0,0.2); 
+    border-radius: 10px;
+}
+
+.cell-3{
+    background-color: #FFDA8B;
+    grid-column: 1;
+    grid-row: 3/4; 
+    box-shadow: 5px 5px rgba(0,0,0,0.2); 
+    border-radius: 10px;
+}
+
+.cell-4{
+    background-color:#E8AE7E;
+    grid-column: 1;
+    grid-row: 4/5; 
+    box-shadow: 5px 5px rgba(0,0,0,0.2); 
+    border-radius: 10px;
+}
+
+.people{
+    width : 100px;
+}
+
+.cell-5{
+    background-color:#A9C6CF;
+    grid-column: 1;
+    grid-row: 5/6; 
+    box-shadow: 5px 5px rgba(0,0,0,0.2); 
+    border-radius: 10px;
+}
+
+.cell-6{
+    background-color: #FFAA97;
+    grid-column: 1;
+    grid-row: 6/7; 
+    box-shadow: 5px 5px rgba(0,0,0,0.2); 
+    border-radius: 10px;
+}
+
+.cell-7{
+    background-color: #E87E9D;
+    grid-column: 1;
+    grid-row: 7/8; 
+    box-shadow: 5px 5px rgba(0,0,0,0.2); 
+    border-radius: 10px;
+}
+
+.cell-8{
+    background-color:#CCB4C3;
+    grid-column: 1;
+    grid-row: 8/9; 
+    box-shadow: 5px 5px rgba(0,0,0,0.2); 
+    border-radius: 10px;
+}
+
+.container ul li:nth-child(n+3) blockquote{
+    font-size: 0.5em;
+}
+
+.container ul li a{
+    text-decoration: none;
+}
+
+.footer-container{
+    width: 100%;
+    padding: 3em 0;
+    background: black;
+    color: #fff;
+    text-align: center;
+}
+
+nav ul {
+    position: fixed;
+    width: 60%;
+    top:0;
+    right:0;
+    text-align: left;
+    background:rgb(36,41,44);
+    z-index: 7;
+    height: 100%;
+    padding-top: 3em;
+    font-size: 1em;
+    
+
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    
+
+}
+.exit-btn{
+    margin-bottom: 1em;
+    margin-top: -1.3em;
+    text-align: right;
+    padding: 0 1.4em;
+}
+
+.exit-btn img{
+    width: 20px;
+    cursor: pointer;
+}
+
+/* 웹페이지에만 나타나는 CSS*/
+@media only screen and (min-width:650px){
+
+    blockquote{
+        font-size : 0.7em;
+        line-height: 1.6em;
+    }
+    .cell{
+        display : grid;
+        grid-gap : 20px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(9,1fr);
+    }
+
+        
+    .cell-1{
+        grid-column: 1 / 5;
+        grid-row: 1 / 2;   
+       
+        /*box-shadow: 5px 5px rgba(0,0,0,0.2); 
+        border-radius: 10px;*/
+    }
+
+    .cell-2{
+    
+        grid-column: 1 / 5;
+        grid-row: 2/3;
+        box-shadow: 5px 5px rgba(0,0,0,0.2); 
+        border-radius: 10px;
+    }
+
+    .cell-3{
+      
+        grid-column: 1/3;
+        grid-row: 3/5; 
+        box-shadow: 5px 5px rgba(0,0,0,0.2); 
+        border-radius: 10px;
+    }
+
+    .cell-4{
+   
+        grid-column: 3/5;
+        grid-row: 3/5; 
+        box-shadow: 5px 5px rgba(0,0,0,0.2); 
+        border-radius: 10px;
+    }
+
+    .people{
+        height : 170px;
+    }
+
+    .cell-5{
+        
+        grid-column: 1/ 3;
+        grid-row: 5/7; 
+        box-shadow: 5px 5px rgba(0,0,0,0.2); 
+        border-radius: 10px;
+    }
+
+    .cell-6{
+      
+        grid-column: 3/5;
+        grid-row: 5/7; 
+        box-shadow: 5px 5px rgba(0,0,0,0.2); 
+        border-radius: 10px;
+    }
+
+    .cell-7{
+        
+        grid-column: 1/3;
+        grid-row: 7/9; 
+        box-shadow: 5px 5px rgba(0,0,0,0.2); 
+        border-radius: 10px;
+    }
+
+    .cell-8{
+      
+        grid-column: 3/ 5;
+        grid-row: 7/9; 
+        box-shadow: 5px 5px rgba(0,0,0,0.2); 
+        border-radius: 10px;
+    }
+
+    .lion{
+        width: 50%;
+    }
+    .container{
+        width:70%;
+    }
+    .show-desktop{
+        display: block;
+        margin: 0 auto 13% auto;
+    }
+    .hide-desktop{
+        display: none;
+    }
+    nav ul {
+        position : inherit;
+        width: auto;
+        background: none;
+        height: auto;
+        display: flex;
+        padding-top: 0;
+        font-family: 'Black Han Sans', sans-serif;
+
+    }
+    nav ul li{
+        float: left;
+    }
+    nav ul li a{
+        color: black;
+        background-color: inhereit; 
+        
+    }   
+}

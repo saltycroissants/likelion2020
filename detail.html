@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="detail.css">
+</head>
+<body>
+        <div class="container">
+                <header>
+                    <nav>
+                        <a href="#" class="hide-desktop">
+                            <img src="image/ham.png" alt="toggle menu" class=menu id=menu>
+                        </a>
+                         <ul class="show-desktop hide-mobile" id="nav">
+                             <li id = "exit" class="exit-btn hide-desktop">
+                                 <img src="image/ic_expand_close.png" alt="exit menu">
+                             </li>
+                            
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Contacts</a></li>
+                        </ul>
+                    </nav>
+                </header>
+
+                <p>팀원 detail page</p>
+        </div>
+        
+        <footer>
+                <div class="footer-container">
+                    <img src="image/basiclogo_E_H_W.png" alt="logo" class="logo">
+                    <p class="address">이화여자대학교 멋쟁이사자처럼</p>
+                </div>
+        </footer>
+
+        <script>
+                var menu = document.getElementById('menu');
+                var nav = document.getElementById('nav');
+                var exit = document.getElementById('exit');
+            
+                menu.addEventListener('click', 
+                function(e){
+                    nav.classList.toggle('hide-mobile');
+                    e.preventDefault();}
+                );
+            
+                exit.addEventListener('click',
+                 function(e){
+                    nav.classList.add('hide-mobile');
+                    e.preventDefault();}
+                );
+        </script>        
+</body>
+
+</html>

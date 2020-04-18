@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="image/favicon.png"/>
+    <title>우리팀을 소개합니다</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="image/ham.png" alt="toggle menu" class=menu id=menu>
+                </a>
+                 <ul class="show-desktop hide-mobile" id="nav">
+                     <li id = "exit" class="exit-btn hide-desktop">
+                         <img src="image/ic_expand_close.png" alt="exit menu">
+                     </li>
+                    
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <img src="image/lion.png" alt="lion grapic" class="lion">
+        </section>
+        <ul class="cell">
+            <li class="cell-1"> 
+                <p>주요 프로젝트 소개</p>
+                <blockquote>아직 진행한 프로젝트가 없습니다:) 앞으로를 기대해주세요!</blockquote>  
+            
+            <li class="cell-2"> 
+                <p>팀 이름 "멋사의 숲"</p> 
+                <blockquote>동물의 숲의 동물들처럼 서로 도우며 개발하자는 의미로 이름을 지었습니다!</blockquote> 
+            </li>
+            <li class="cell-3"> 
+                <a href="detail.html">
+                    <p>팀원 애플</p>                
+                    <img src="image/apple.png" alt="people icon" class=people > 
+                </a> 
+                <blockquote>"열심히 하겠습니다!"</blockquote>  
+            </li>
+            <li class="cell-4"> 
+                <a href="detail.html">
+                    <p>팀원 사슴</p>                
+                    <img src="image/deer.png" alt="people icon" class=people>                    
+                </a>
+            <blockquote>"열심히 하겠습니다!"</blockquote>
+            </li> 
+            <li class="cell-5"> 
+                <a href="detail.html">
+                    <p>팀원 아무개</p>                
+                    <img src="image/bear.png" alt="people icon" class=people>                    
+                </a> 
+            <blockquote>"열심히 하겠습니다!"</blockquote>
+            </li> 
+            <li class="cell-6"> 
+                <a href="detail.html">
+                    <p>팀원 아무개</p>                
+                    <img src="image/cat.png" alt="people icon" class=people>                    
+                </a>
+            <blockquote>"열심히 하겠습니다!"</blockquote>
+            </li> 
+            <li class="cell-7"> 
+                <a href="detail.html">
+                    <p>팀원 아무개</p>                
+                    <img src="image/sq.png" alt="people icon" class=people>                    
+                </a>
+            <blockquote>"열심히 하겠습니다!"</blockquote>
+
+            </li> 
+            <li class="cell-8"> 
+                <a href="detail.html">
+                    <p>팀원 아무개</p>                
+                    <img src="image/apple.png" alt="people icon" class=people>                    
+                </a> 
+            <blockquote>"열심히 하겠습니다!"</blockquote>
+            </li> 
+        </ul>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <img src="image/basiclogo_E_H_W.png" alt="logo" class="logo">
+            <p class="address">이화여자대학교 멋쟁이사자처럼</p>
+        </div>
+    </footer>
+
+<script>
+    var menu = document.getElementById('menu');
+    var nav = document.getElementById('nav');
+    var exit = document.getElementById('exit');
+
+    menu.addEventListener('click', 
+    function(e){
+        nav.classList.toggle('hide-mobile');
+        e.preventDefault();}
+    );
+
+    exit.addEventListener('click',
+     function(e){
+        nav.classList.add('hide-mobile');
+        e.preventDefault();}
+    );
+</script>
+
+</body>
+</html>
